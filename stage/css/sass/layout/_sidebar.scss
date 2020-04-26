@@ -11,4 +11,80 @@
     &.no-side {
         left: -250px;
     }
+    .logo {
+        font-size: 30px;
+        font-weight: bold;
+    }
+    .links {
+        // All links
+        li {
+            a {
+                color: #ccc;
+                display: block;
+                padding: 10px;
+                transition: .4s;
+                &:hover {
+                    text-decoration: none;
+                    color: #fff;
+                }
+            }
+        }
+        // Main links
+        > li > a {
+            position: relative;
+            color: #fff;
+            padding-left: 20px;
+            &:before {
+                content: "";
+                position: absolute;
+                top: 50%;
+                left: 0;
+                width: 10px;
+                height: 10px;
+                border: 2px solid #fff;
+                transform: translateY(-50%);
+                border-radius: 50%;
+            }
+            &:hover {
+                padding-left: 30px;
+            }
+            .fa-arrow-circle-right {
+                float: right;
+                transition: .3s;
+                &.down {
+                    transform: rotate(90deg);
+                }
+            }
+        }
+        
+        .sub-links {
+            position: relative;
+            display: none;
+            &:before {
+                content: "";
+                position: absolute;
+                left: 15px;
+                top: 0;
+                width: 4px;
+                height: 100%;
+                background-color: #666;
+            }
+            li {
+                a {
+                    padding: 5px;
+                    padding-left: 40px;
+                    position: relative;
+                    &:hover:before {
+                        content: "";
+                        position: absolute;
+                        left: 15px;
+                        top: 0;
+                        width: 4px;
+                        height: 100%;
+                        background-color: #fff;
+                    }
+                }
+            }
+        }
+    }
 }
