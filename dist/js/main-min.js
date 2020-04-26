@@ -1,1 +1,1 @@
-const myMap=new Map,mySet=new Set;
+const myMap=new Map,mySet=new Set;$(function(){"use strict";$(".side-toggling").on("click",function(){$(".content, .sidebar").toggleClass("no-side")})});

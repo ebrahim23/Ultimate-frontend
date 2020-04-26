@@ -2,7 +2,8 @@
     box-sizing: border-box;
 }
 body {
-
+    margin: 0;
+    padding: 0;
 }
 
 .page {
@@ -13,5 +14,6 @@ body {
         transition: .3s;
         will-change: width;
         float: right;
+        &.no-side {width: 100%}
     }
 }
