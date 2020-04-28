@@ -14,6 +14,10 @@
     .logo {
         font-size: 30px;
         font-weight: bold;
+        background-color: #fff;
+        color: #333;
+        padding: 10px;
+        margin-bottom: 5px;
     }
     .links {
         // All links
@@ -32,6 +36,7 @@
         // Main links
         > li > a {
             position: relative;
+            text-transform: uppercase;
             color: #fff;
             padding-left: 20px;
             &:before {

@@ -10,7 +10,9 @@ html(lang="en")
         .page.home
             include pug/layout/sidebar
             .content
-                include pug/layout/header
-                .sub-content
-                    h1 #{pageTitle}
+                .content-head
+                    include pug/layout/header
+                    include pug/layout/sub-content
+            .rightbar
+                | Rightbar
     include pug/layout/scripts

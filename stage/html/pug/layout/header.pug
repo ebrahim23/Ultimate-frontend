@@ -1,2 +1,12 @@
 .header
     i.fas.fa-exchange-alt.fa-2x.side-toggling
+
+    .dropdown.notify
+        i.fa.fa-bell.fa-lg#notifications(data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+        .dropdown-menu(aria-labelledby='notifications')
+            .noty-head
+                | ELMester Notifications
+            .noty-content
+                | ELMester Notifications
+            .noty-foot
+                a(href="#") ELMester Notifications
