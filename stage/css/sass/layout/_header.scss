@@ -1,20 +1,20 @@
 .header {
     background-color: #fff;
-    padding: 12px;
+    padding: 15px;
+    color: rgb(105, 105, 105);
     .side-toggling {
         cursor: pointer;
-        color: #000;
     }
     .notify {
         display: inline-block;
-        top: -5px;
-        margin-left: 20px;
+        margin-left: 25px;
         cursor: pointer;
         .dropdown-menu {
             top: 10px !important;
             border: none;
             box-shadow: 0 0 10px #ddd;
             width: 400px;
+            cursor: initial;
             .noty-head {
                 background-color: #333;
                 padding: 10px;
@@ -37,6 +37,33 @@
                     }
                 }
             }
+        }
+    }
+    .fullscreen {
+        margin-left: 30px;
+        cursor: pointer;
+    }
+    .user-megamenu {
+        float: right;
+        user-select: none;
+        .avatar {
+            width: 30px;
+            height: 30px;
+            margin-right: 5px;
+        }
+        .user {
+            font-weight: bold;
+            margin-right: 5px;
+            cursor: pointer;
+        }
+        .mega-down {
+            cursor: pointer;
+        }
+        .dropdown-menu {
+            top: 10px !important;
+            border: none;
+            box-shadow: 0 0 10px #ddd;
+            width: 400px;
         }
     }
 }

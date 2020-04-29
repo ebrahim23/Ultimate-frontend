@@ -1,6 +1,5 @@
 .header
-    i.fas.fa-exchange-alt.fa-2x.side-toggling
-
+    i.fas.fa-exchange-alt.fa-lg.side-toggling
     .dropdown.notify
         i.fa.fa-bell.fa-lg#notifications(data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
         .dropdown-menu(aria-labelledby='notifications')
@@ -10,3 +9,11 @@
                 | ELMester Notifications
             .noty-foot
                 a(href="#") ELMester Notifications
+    i.fas.fa-expand.fa-lg.fullscreen
+    .dropdown.user-megamenu
+        .username#userMenu(data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+            img.avatar.rounded-circle(src="imgs/1.jpg", alt="User Avatar")
+            span.user Ibrahim ELMester
+            i.fa.fa-arrow-circle-down.fa-sm.mega-down
+        .dropdown-menu.dropdown-menu-right(aria-labelledby='userMenu')
+            
