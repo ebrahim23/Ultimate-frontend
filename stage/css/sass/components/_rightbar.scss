@@ -1,0 +1,52 @@
+.rightbar {
+    width: 220px;
+    height: 100%;
+    background-color: #fff;
+    z-index: 1234;
+    position: fixed;
+    padding: 20px;
+    padding-top: 50px;
+    top: 0;
+    right: -220px;
+    font-size: 40px;
+    text-align: center;
+    transition: .3s;
+    .gear {
+        background-color: #fff;
+        padding: 10px 15px;
+        position: absolute;
+        top: 150px;
+        cursor: pointer;
+        right: 220px;
+        font-size: 30px;
+    }
+    &.hideRight {
+        right: 0;
+    }
+    .opt-color {
+        ul {
+            $colors : #d63031, #0984e3, #00b894;
+            @for $i from 1 through length($colors) {
+                li:nth-child(#{$i}) {
+                    background-color: nth($colors, $i);
+                }
+            }
+            li {
+                width: 25px;
+                height: 25px;
+                border-radius: 50%;
+                opacity: .6;
+                cursor: pointer;
+                display: inline-block;
+                &.active {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+    .opt-font {
+        select {
+            outline: none;
+        }
+    }
+}

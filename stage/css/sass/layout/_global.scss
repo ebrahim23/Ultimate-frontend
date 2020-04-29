@@ -4,6 +4,19 @@
 body {
     margin: 0;
     padding: 0;
+    font-family: 'Roboto', sans-serif;
+    &.roboto {
+        font-family: 'Roboto', sans-serif;
+    }
+    &.baloo {
+        font-family: 'Baloo Bhaina 2', cursive;
+    }
+    &.bangers {
+        font-family: 'Bangers', cursive;
+    }
+    &.mono {
+        font-family: 'Roboto Mono', monospace;
+    }
 }
 
 .page {
@@ -17,15 +30,15 @@ body {
         float: right;
         &.no-side {width: 100%}
     }
-    // .rightbar {
-    //     width: 200px;
-    //     height: 100%;
-    //     background-color: #333;
-    //     position: fixed;
-    //     top: 0;
-    //     right: 0;
-    //     color: #fff;
-    //     font-size: 40px;
-    //     text-align: center;
-    // }
+    .sub-content {
+        padding: 20px;
+        .page-title {
+            font-weight: bold;
+            text-transform: uppercase;
+            color: #d63031;
+        }
+        // .page-discription {
+        //     padding: 20px;
+        // }
+    }
 }

@@ -1,0 +1,16 @@
+.rightbar.text-center
+    .gear
+        i.fas.fa-cog.fa
+    .opt-box.opt-color
+        h4 Switch Theme
+        - var themes = ['red-theme', 'blue-theme', 'green-theme']
+        ul.list-unstyled
+            each theme in themes
+                li(data-theme=theme)
+    hr
+    .opt-box.opt-font
+        h4 Switch Font
+        - var fonts = ['roboto', 'baloo', 'bangers', 'mono']
+        select.form-control
+            each font in fonts
+                option(value=font)=font + ' Font'

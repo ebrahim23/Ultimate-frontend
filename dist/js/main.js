@@ -1,5 +1,3 @@
-const myMap = new Map();
-const mySet = new Set();
 $(function(){
     'use strict';
     // Toggle Sidebar
@@ -20,7 +18,33 @@ $(function(){
             closeScreen();
         }
     })
-    var elem = document.documentElement;
+    // Rightbar toggle
+    $(".gear").on('click', function(){
+        $(this).find('i').toggleClass('fa-spin');
+        $('.rightbar').toggleClass('hideRight');
+    })
+    // Switch colors
+    var themeClasses = [];
+    $('.opt-color li').each(function(){
+        themeClasses.push($(this).data('theme'));
+    })
+    $('.opt-color li').on('click', function(){
+        $(this).addClass('active').siblings().removeClass('active');
+        $('body')
+            .removeClass(themeClasses.join(" "))
+            .addClass($(this).data('theme'));
+    })
+    // Switch Font Style
+    var fontClasses = [];
+    $('.opt-font select option').each(function(){
+        fontClasses.push($(this).val());
+    })
+    $('.opt-font select').on('change', function(){
+        $('body').removeClass(fontClasses.join(" ")).addClass($(this).find('option:selected').val());
+    })
+})
+
+var elem = document.documentElement;
 
     /* View in fullscreen */
     function openScreen() {
@@ -47,4 +71,3 @@ $(function(){
         document.msExitFullscreen();
     }
     }
-})

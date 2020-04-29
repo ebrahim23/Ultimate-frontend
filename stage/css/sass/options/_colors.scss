@@ -1,0 +1,19 @@
+$themes: (
+    red-theme: (color: #d63031),
+    blue-theme: (color: #0984e3),
+    green-theme: (color: #00b894)
+);
+
+@each $theme, $map in $themes {
+    .#{$theme} {
+        .page .sub-content .page-title {
+            color: map-get($map, color);
+        }
+        .header .user-megamenu .dropdown-menu .mega-head h4 {
+            color: map-get($map, color);
+        }
+        .header .fa:hover, .header .fas:hover {
+            color: map-get($map, color);
+        }
+    }
+}

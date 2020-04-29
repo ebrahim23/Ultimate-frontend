@@ -1,7 +1,8 @@
 .sidebar
     .logo.text-center ELMester
     ul.links.list-unstyled
-        li: a(href="homepage.html") Homepage
+        li: a(href="homepage.html" class= pageTitle === 'home' ? 'active' : '') Homepage
+        li: a(href="about.html" class= pageTitle === 'about' ? 'active' : '') ABOUT
         li 
             a.arrows(href="#") 
                 | Skills 1

@@ -53,6 +53,11 @@
             &:hover {
                 padding-left: 30px;
             }
+            &.active {
+                &:before {
+                    border-color: #d63031;
+                }
+            }
             .fa-arrow-circle-right {
                 float: right;
                 transition: .3s;
